@@ -19,8 +19,8 @@ const Input = props => {
 	return (
 		<div className="input-container">
 			<SearchIcon />
-			<input type="text" value={text} onChange={handleChange} />
-				{ searching ? <SpinnerIcon spin={true}/> : text.length ? <CloseIcon onClick={handleClose} /> : null }
+			<input type="text" value={text} onChange={handleChange} placeholder="Search in repos" />
+			{ searching ? <SpinnerIcon spin={true}/> : text.length ? <CloseIcon onClick={handleClose} /> : null }
 		</div>
 	);
 };
