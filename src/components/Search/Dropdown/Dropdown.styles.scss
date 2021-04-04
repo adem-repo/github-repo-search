@@ -1,0 +1,40 @@
+@import "src/components/styles/colors";
+
+.dropdown {
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    background-color: $grey-light;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    transform: translate(-1000px);
+    opacity: 0;
+    transition: translate .3s, opacity .3s;
+
+    &.show {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        transition: background-color .3s, color .3s;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $grey;
+        }
+
+        &:hover {
+            background-color: $accent;
+            color: white;
+        }
+
+        .text {
+            text-overflow: ellipsis;
+            white-space: pre;
+            overflow: hidden;
+            margin-right: 16px;
+        }
+    }
+}

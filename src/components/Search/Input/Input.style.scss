@@ -1,0 +1,21 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 456px;
+    background: #ECECEC;
+    border: 2px solid #CECECE;
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    input {
+        height: 40px;
+        width: 360px;
+        border: none;
+        background-color: inherit;
+        font-size: inherit;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

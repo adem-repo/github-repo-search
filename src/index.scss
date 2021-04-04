@@ -1,0 +1,12 @@
+@import "src/components/styles/fonts";
+@import "src/components/styles/colors";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

@@ -1,0 +1,22 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin: 14px 16px;
+    box-sizing: border-box;
+
+    &.clickable-icon {
+        cursor: pointer;
+    }
+
+    &.spin {
+        animation:spin .3s linear infinite;
+    }
+
+    @keyframes spin {
+        100% {
+            transform:rotate(360deg);
+        }
+    }
+}
